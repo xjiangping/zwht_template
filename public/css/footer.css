@@ -1,0 +1,86 @@
+#footer{
+  background-color: #373737;
+}
+#footer>.container{
+  background-color: #373737;
+}
+#footer>.container>div.intro{
+  float: left;
+  width: 50%;
+}
+
+#footer>.container>div.intro{
+  float: left;
+  width: 50%;
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+#footer>.container>div.intro>dl>dt{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#footer>.container>div.intro>dl>dd{
+  height: 30px;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#footer>.container>div.qrcodeImg{
+  float: left;
+  width: 50%;
+  padding-top: 20px;
+}
+#footer>.container>div.qrcodeImg>div{
+  float: left;
+  width: 50%;
+  text-align: center;
+  height: 240px;
+  box-sizing: border-box;
+  padding:  40px;
+}
+#footer>.container>div.qrcodeImg>div>img{
+  height: 150px;
+}
+#footer>.container>div.information{
+  clear: both;
+  border-top: 1px solid #aaa;
+  padding: 10px 0;
+}
+#footer>.container>div.information>p{
+  text-align: center;
+  color: #aaa;
+}
+
+@media screen and (max-width: 810px) {
+  #footer>.container>div.intro{
+    width: 100%;
+  }
+  #footer>.container>div.qrcodeImg{
+    width: 100%;
+  }
+  #footer>.container>div.qrcodeImg>div{
+    padding: 0;
+    height: auto;
+  }
+  #footer>.container>div.qrcodeImg>div>img{
+    max-width: 150px;
+
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,199 @@
+#banner{
+  position: relative;
+}
+#banner>.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#banner>.bg>img{
+  width: 100%;
+  height: 100%;
+}
+#main{
+  min-height: 600px;
+}
+#main>.container>div.selTab{
+  float: left;
+  width: 200px;
+  box-sizing: border-box;
+}
+#main>.container>div.selTab>ul{
+  background-color: #ddd;
+}
+#main>.container>div.selTab>ul>li{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  padding: 0 10px;
+  margin-top: 1px;
+}
+#main>.container>div.selTab>ul>li:first-child{
+  background-color: #2a4d9f;
+  color: #fff;
+  margin: 0;
+}
+#main>.container>div.selTab>ul>li:nth-child(2){
+  margin: 0;
+}
+#main>.container>div.selTab>ul>li.active,
+#main>.container>div.selTab>ul>li:hover:not(:first-child){
+  background-color: #aaa;
+}
+#main>.container>div.selTab>ul>li>a{
+  display: block;
+  color: #000;
+  border-bottom: 1px solid #fff;
+  /*box-sizing: border-box;*/
+  height: 50px;
+  line-height: 50px;
+}
+#main>.container>div.selTab>ul>li:last-child>a{
+  border: 0;
+}
+
+#main>.container>div.tabView{
+  margin-left: 200px;
+  padding: 20px;
+}
+#main>.container>div.tabView>.Tit{
+  padding: 30px 0;
+}
+#main>.container>div.tabView>.Tit>h3{
+  width: 300px;
+  font-size: 14px;
+  height: 30px;
+}
+#main>.container>div.tabView>.Tit>h3>span{
+  float: left;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+}
+#main>.container>div.tabView>.Tit>h3>span.lab{
+  background-color: #2a4d9f;
+  color: #fff;
+  width: 80px;
+  text-align: center;
+  position: relative;
+}
+#main>.container>div.tabView>.Tit>h3>span.lab:after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 0;
+  height: 0;
+  border: 0;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #2a4d9f;
+}
+#main>.container>div.tabView>.Tit>h3>span.intor{
+  box-sizing: border-box;
+  border-bottom: 1px solid #2a4d9f;
+  padding: 0 5px 0 20px;
+}
+
+
+#main>.container>div.tabView>.detailBody>.detailTit{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #aaa;
+  color: #2a4d9f;
+  margin-bottom: 20px;
+}
+
+#main>.container>div.tabView>.detailBody>.article>p{
+  font-size: 14px;
+  text-indent: 28px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+#main>.container>div.tabView>.detailBody>.norms{
+  width: 50%;
+  overflow-x: auto;
+}
+#main>.container>div.tabView>.detailBody>.norms>ul>li{
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+#main>.container>div.tabView>.detailBody>.norms>ul>li:first-child{
+  font-weight: bold;
+}
+#main>.container>div.tabView>.detailBody>.norms>ul>li:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+#main>.container>div.tabView>.detailBody>.norms>ul>li:nth-child(even){
+  background-color: #aaa;
+}
+#main>.container>div.tabView>.detailBody>.norms>ul>li>span.tit{
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+}
+#main>.container>div.tabView>.detailBody>.norms>ul>li>span.lab{
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+  top:5px;
+}
+#main>.container>div.tabView>.detailBody>.norms>ul>li>span.matter{
+  float: right;
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+  top:5px;
+}
+#main>.container>div.tabView>.detailBody>.norms>ul>li>span.matter>i{
+  display: inline-block;
+  font-style: normal;
+  width: 80px;
+}
+#main>.container>div.tabView>.detailBody>.norms>p{
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+}
+
+/*响应式*/
+@media screen and (max-width: 1000px) {
+  #main>.container>div.selTab{
+    display: none;
+  }
+  #main>.container>div.tabView{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #main>.container>div.tabView>.detailBody>.article{
+    float: none;
+    width: 100%;
+
+  }
+  #main>.container>div.tabView>.detailBody>.norms{
+    float: none;
+    margin: 0 auto;
+    width: 100% !important;
+
+  }
+}
+
+
+
+
+

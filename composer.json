@@ -1,0 +1,21 @@
+{
+  "name": "zwhtphp",
+  "description":"PHP Framework",
+  "type":"Framwork",
+  "keywords":[
+    "PHP","PHP Framework"
+  ],
+  "require":{
+    "php":">=5.3.0",
+    "filp/whoops":"*",
+    "symfony/var-dumper":"*",
+    "catfan/medoo":"*",
+    "twig/twig":"*"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}

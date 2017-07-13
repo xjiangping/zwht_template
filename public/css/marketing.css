@@ -1,0 +1,199 @@
+
+#banner {
+    position: relative;
+}
+
+#banner > .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#banner > .bg > img {
+    width: 100%;
+    height: 100%;
+}
+
+#contact > div.container > div.menu {
+    display: inline-block;
+    float: left;
+}
+
+#contact > div.container > div > ul {
+    background: #d1d1d1;
+    width: 200px;
+    text-align: center;
+}
+
+#contact > div.container > div > ul > li {
+    height: 50px;
+    line-height: 50px;
+    width: 180px;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+#contact > div.container > div > ul > li:first-child {
+    margin-top: 0
+}
+
+#contact > div.container > div > ul > li.selected {
+    background: #2a4d9f;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#contact > div.container > div > ul > li:hover {
+    background: #b1b1b1;
+}
+
+#contact > div.container > div > ul > li.selected:hover {
+    background: #2a4d9f;
+}
+
+#contact > div.container > div > ul > li > div {
+    width: 180px;
+    border-bottom: 1px solid #fff;
+}
+
+#contact > div.container > div.explain {
+    margin-left: 200px;
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+#contact > div.container > div.explain > div.contactTitle {
+    height: 30px;
+    line-height: 30px;
+    width: 300px;
+    margin-left: 20px;
+    border-bottom: 1px solid #2a4d9f;
+
+}
+
+#contact > div.container > div.explain > div.contactTitle > div {
+    display: inline-block;
+    background: #2a4d9f;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    font-size: 16px;
+}
+
+#contact > div.container > div.explain > div.contactTitle > div:after {
+    content: '';
+    border-bottom: 30px solid #2a4d9f;
+    border-right: 25px solid #ffffff;
+    background: #000;
+    width: 0;
+    display: inline-block;
+    height: 0;
+    position: absolute;
+    right: -25px;
+
+}
+
+#contact > div.container > div.explain > div.contactTitle > span {
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+#contact > div.container > div.explain > div.right_cont > div {
+    display: inline-block;
+    padding: 20px;
+}
+
+#contact > div.container > div.explain > div.right_cont > div > img {
+    width: 100%;
+    max-width: 350px;
+
+}
+
+#contact > div.container > div.explain > div.right_cont > div.Tel {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#contact > div.container > div.explain > div.right_cont > div > p {
+    line-height: 25px;
+}
+
+#contact > div.container > div.explain > div.right_cont > div.pic {
+    margin-top: 20px;
+}
+
+#contact > div.container > div.explain > div.right_cont > div.pic_two {
+    margin-top: -40px;
+    bottom: -130px;
+}
+
+#contact > div.container > div.explain > div.right_cont > div.text > p {
+    text-indent: 2rem;
+}
+
+@media screen and (max-width: 1000px ) {
+    #contact > div.container > div.menu {
+        display: none;
+    }
+
+    #contact > div.container > div.explain {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    #contact > div.container > div.explain > div.right_cont > div.pic,
+    #contact > div.container > div.explain > div.right_cont > div.pic_two {
+        position: absolute;
+        right: 0;
+    }
+
+    #contact > div.container > div.explain > div.right_cont > div.text,
+    #contact > div.container > div.explain > div.right_cont > div.Tel {
+        padding-right: 400px;
+    }
+
+}
+
+#contact > div.container > div.explain > div.right_cont {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#contact > div.container > div.explain > div.right_cont > h3 {
+    font-size: 16px;
+    color: #2a4d9f;
+}
+
+@media screen and (max-width: 767px) {
+    #contact > div.container > div.explain {
+        margin: 0;
+        padding-top: 30px;
+    }
+
+    #contact > div.container > div.explain > div.right_cont > img {
+        width: 100%;
+    }
+
+    #contact > div.container > div.explain > div.right_cont {
+        text-align: center;
+    }
+
+    #contact > div.container {
+        padding: 0;
+    }
+}
+
+.selected_two {
+    background: #b1b1b1;
+}

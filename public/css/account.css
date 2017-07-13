@@ -1,0 +1,88 @@
+#header > .container > div.headMenu > div.MenuS > ul > li.present {
+    background-color: #2a4d9f;
+}
+
+#header > .container > div.headMenu > div.MenuS > ul > li.present > a {
+    color: #ffffff;
+}
+
+#banner {
+    position: relative;
+}
+
+#banner > .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#banner > .bg > img {
+    width: 100%;
+    height: 100%;
+}
+
+#trouble {
+    margin: 50px 0;
+    padding-bottom: 80px;
+}
+
+#trouble > div.container > div > h2 > span {
+    border-top: 1px solid #2a4d9f;
+    width: 60px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+}
+
+#trouble > div.container > div > h2 > span.lineOne {
+    left: -70px;
+}
+
+#trouble > div.container > div > h2 > span.lineTwo {
+    right: -70px;
+}
+
+#trouble > div.container > div.title {
+    text-align: center;
+}
+
+#trouble > div.container > div > h2 {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+#trouble > div > div > h2 {
+    text-align: center;
+}
+
+#trouble > div.container > div > ul > li {
+    padding-bottom: 30px;;
+}
+#trouble > div.container > div > ul > li:hover>span {
+    color: #7196ee;;
+}
+#trouble > div.container > div > ul > li > span {
+    color: #2a4d9f;
+    font-size: 14px;
+    height: 30px;
+    line-height: 33px;
+}
+
+#trouble > div.container > div > ul > li > p {
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 10px 0;
+
+}
+
+
+
+
+

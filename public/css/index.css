@@ -1,0 +1,320 @@
+#banner{
+  width: 100%;
+  position: relative;
+}
+#banner>ul.imgList{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+#banner>ul.imgList>li{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+#banner>ul.imgList>li>img{
+  width: 100%;
+  height: 100%;
+}
+#banner>ul.imgList>li.active{
+  opacity: 1;
+  z-index: 10;
+}
+#banner>ul.num{
+  position: absolute;
+  bottom:10%;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  z-index: 200;
+}
+#banner>ul.num>li{
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  margin-right: 20px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  opacity: 0.6;
+}
+#banner>ul.num>li:last-child{
+  margin: 0;
+}
+#banner>ul.num>li.in,
+#banner>ul.num>li:hover{
+  background-color: #fff;
+}
+
+#case,
+#product{
+  padding: 80px 0 40px;
+}
+#case>.container>.Tit,
+#product>.container>.Tit{
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+#case>.container>.Tit>a,
+#product>.container>.Tit>a{
+  display: block;
+  color: #000;
+}
+#case>.container>.Tit>a>h3,
+#product>.container>.Tit>a>h3{
+  font-size: 20px;
+}
+#product>.container>.detail>ul>li{
+  float: left;
+  width: 50%;
+  padding: 20px 0 ;
+  box-sizing: border-box;
+
+}
+#product>.container>.detail>ul>li>a{
+  display: block;
+  color: #000;
+  height: 100px;
+}
+#product>.container>.detail>ul>li>a:hover{
+  color: #2a4d9f;
+}
+#product>.container>.detail>ul>li>a:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#product>.container>.detail>ul>li>a>div.itemImg{
+  float: left;
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+#product>.container>.detail>ul>li>a>div.itemImg>img{
+  width: 80px;
+  height: 80px;
+}
+#product>.container>.detail>ul>li>a>div.itemDetail{
+  margin-left: 120px;
+  padding: 0 30px  0 50px;
+  text-align: left;
+}
+#product>.container>.detail>ul>li>a>div.itemDetail>h4{
+  height: 40px;
+  line-height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#product>.container>.detail>ul>li>a>div.itemDetail>p{
+  max-height: 60px;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+#case>.container>.detail{
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+#case>.container>.detail>ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 133.33%;
+}
+#case>.container>.detail>ul>li{
+  float: left;
+  width: 25%;
+}
+#case>.container>.detail>ul>li>a{
+  display: block;
+  color: #000;
+}
+#case>.container>.detail>ul>li>a:hover{
+  color: #2a4d9f;
+}
+#case>.container>.detail>ul>li>a>div.itemImg>img{
+  width: 220px;
+  height: 220px;
+}
+#case>.container>.detail>ul>li>a>p{
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#news{
+  padding-bottom: 30px;
+}
+#news>.container>.Tit{
+ padding-bottom: 20px;
+}
+#news>.container>.Tit>a{
+  display: block;
+  color: #000;
+  text-align: left;
+}
+
+#news>.container>.Tit>a>h3{
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+}
+#news>.container>.Tit>a>h3>span{
+  font-size: 12px;
+  position: relative;
+  top: 3px;
+}
+#news>.container>.Tit>a>h3>span>i{
+  color: #D12653;
+  font-size: 16px;
+}
+#news>.container>.newsList{
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  border-right: 1px solid #000;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
+#news>.container>.newsList>ul>li>a{
+  display: block;
+  text-align: left;
+  color: #000;
+}
+#news>.container>.newsList>ul>li>a:hover{
+  color:#2a4d9f;
+}
+#news>.container>.newsList>ul>li>a>h4{
+  height: 30px ;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#news>.container>.newsList>ul>li>a>h4:before{
+  content: ">";
+  color: #D12653;
+  margin-right: 5px;
+}
+#news>.container>.newsList>ul>li>a>p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#news>.container>.newsBanner{
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+#news>.container>.newsBanner>h3{
+  font-size: 20px;
+  color: #2a4d9f;
+  height: 30px;
+  line-height: 30px;
+}
+#news>.container>.newsBanner>p{
+  line-height: 20px;
+  max-height: 100px;
+  overflow: hidden;
+}
+
+
+
+
+/*响应式*/
+@media screen and (max-width: 810px) {
+  /*轮播点*/
+  #banner>ul.num>li{
+    width: 10px;
+    height: 10px;
+  }
+  /*产品*/
+  #product>.container>.detail>ul>li{
+    width: 100%;
+  }
+  #product>.container>.detail>ul>li>a>div.itemImg{
+    margin-left: 0;
+  }
+
+  #product>.container>.detail>ul>li>a>div.itemDetail{
+    padding: 0;
+  }
+  /*案例*/
+  #case>.container>.detail{
+    height: auto;
+  }
+  #case>.container>.detail>ul{
+    position: relative;
+    width: 100%;
+  }
+  #case>.container>.detail>ul>li{
+    width: 50%;
+  }
+
+  /*新闻*/
+  #news>.container>.newsList{
+    float: none;
+    width: 100%;
+    border: 0;
+    padding: 0;
+  }
+  #news>.container>.newsBanner{
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+
+}
+
+
+@media screen and (max-width: 520px) {
+  #case,
+  #product{
+    padding: 0;
+  }
+  /*轮播点*/
+  #banner>ul.num>li{
+    width: 5px;
+    height: 5px;
+    border: 1px solid #fff;
+    margin-right: 10px;
+  }
+  /*产品*/
+  #product>.container>.detail>ul>li>a>div.itemDetail{
+    margin-left: 90px;
+  }
+
+  #case>.container>.detail>ul>li{
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
